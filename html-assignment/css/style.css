@@ -97,7 +97,7 @@ hr{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:1.2vw;
     display:inline-block;
-    justify-content:lwft;
+    justify-content:left;
     cursor:pointer;
     margin-top:0.2vw;
     margin-left:4.5vw;
@@ -114,10 +114,10 @@ hr{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:1.2vw;
     display:inline-block;
-    justify-content:lwft;
+    justify-content:left;
     cursor:pointer;
     margin-top:0.2vw;
-    margin-left:4.5vw;
+    margin-left:6vw;
     padding-top:10px;
     padding-bottom:10px;
     padding-right:40px;
@@ -125,6 +125,7 @@ hr{
     border:none;
     border-radius:8px;
     text-decoration:none;
+    color:black;
 }
 
 .morebuttonbutton,

@@ -1,0 +1,23 @@
+body{
+    margin-left:150px;
+    margin-right:150px;
+    background-color:#aad4cf;
+}
+
+.h1andimage{
+    
+}
+
+.headerimage{
+    display:flex;
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:0px;
+    padding-right:0px;
+    justify-content:center;
+    width:100%;
+}
+
+.h2image{
+    height:200px;
+}
