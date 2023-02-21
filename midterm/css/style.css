@@ -1,12 +1,36 @@
+/*fix needed: margin, title, and image need to be spaced properly under certain screen size*/
+@media screen (min-width: 1000px){
+.lonestarfishtitle{
+font-size:0.5rem;
+}
+}
+
 body{
-    margin-left:150px;
-    margin-right:150px;
+    margin-left:250px;
+    margin-right:250px;
     background-color:#aad4cf;
 }
 
-.h1andimage{
-    
+.headerimagetext{
+    position:relative;
+    text-align:center;
+    background: cadetblue url(../images/bread.jpg) no-repeat center;
 }
+
+
+
+.lonestarfishtitle{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:5vw;
+    position:absolute;
+    color:white;
+    top:58%;
+    left:50%;
+    transform:translate(-50%, 0%);
+}
+
+
+
 
 .headerimage{
     display:flex;
@@ -19,5 +43,5 @@ body{
 }
 
 .h2image{
-    height:200px;
+    height:300px;
 }
