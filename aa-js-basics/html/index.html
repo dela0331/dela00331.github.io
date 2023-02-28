@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Basics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <button>Press Me</button>
+    <script>
+        document.title ="A new title";
+
+        let todo1 = 'Get groceries';
+        let todo2 = 'Wash car';
+        let todo3 = 'Make dinner';
+        let clickme = 'Click Me';
+
+        function addTodo(todoTitle) {
+            let element = document.createElement('div');
+            element.innerText = todoTitle;
+            document.body.appendChild(element);
+
+        }
+
+        addTodo(todo1);
+        addTodo(todo2);
+        addTodo(todo3);
+
+    </script>
+</body>
+
+</html>
