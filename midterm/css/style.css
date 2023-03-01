@@ -1,6 +1,5 @@
 body{
     background-color:#aad4cf;
-    margin-top:0px;
 }
 
 .container{
@@ -18,11 +17,10 @@ body{
     font-size:5vw;
     position:absolute;
     color:white;
-    top:40%;
+    top:58%;
     left:50%;
     transform:translate(-50%, 0%);
     z-index:1;
-    font-weight:500;
 }
 
 .headerimage{
