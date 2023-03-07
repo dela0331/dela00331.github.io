@@ -122,6 +122,10 @@ mobile style
     transition:0.15s;
 }
 
+.btn:active{
+    background-color:#0d4b5b;
+}
+
 .sitefooter{
     margin-top:20px;
     padding:20px 0;
