@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS Basics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <button>Press Me</button>
+    <script>
+        document.title ="A new title";
+
+        let todos = ['Get groceries','Wash car','Make dinner'];
+        todos.push('another todo');
+
+        todos.forEach(function (todoTitle) {
+            let element = document.createElement('div');
+            element.innerText = todoTitle;
+            document.body.appendChild(element);
+        });
+    </script>
+</body>
+
+</html>
