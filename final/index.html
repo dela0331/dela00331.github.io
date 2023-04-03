@@ -5,24 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css links -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- icon links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Document</title>
 </head>
 
 <body>
+<container class="container">
     <header>
         <nav>
+            <a class="mainlogo" href="index.html"><img src="images/logo.png"></a>
             <ul>
-                <li>Home</li>
+                <li class="home">Home</li>
                 <li>About Us</li>
                 <li>Services</li>
                 <li>Team</li>
                 <li>Contact</li>
             </ul>
             <form id="form">
-                <input type="search" id="query" name="q" placeholder="Search...">
-                <button>Search</button>
+                <input type="search" id="query" name="q" placeholder="Search">
+                <button><i class="fa-solid fa-magnifying-glass" style="color:black"></i></button>
             </form>
         </nav>
 
@@ -34,7 +46,7 @@
                     vero.
                 </p>
                 <a>
-                    Connect with us ***
+                    Connect with us <i class="fa-solid fa-play" style="color:black"></i>
                 </a>
             </div>
         </div>
@@ -171,6 +183,7 @@
         All Images are taken from <a href="###">Unsplash</a>
 
     </footer>
+</container>
 </body>
 
 </html>

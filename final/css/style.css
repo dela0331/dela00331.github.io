@@ -1,0 +1,39 @@
+/****
+general styles
+****/
+
+.container{
+    background-color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background-color:#222;
+}
+
+
+
+/****
+mobile styles
+****/
+
+.home{
+    background-color:#c78c06;
+}
+
+.mainlogo{
+    background-color:#c78c06;
+    display:flex;
+}
+
+/****
+width queries
+****/
+
+@media screen and (max-width:1200px) {
+    
+}
+
+@media screen and (min-width: 760px){
+
+}
