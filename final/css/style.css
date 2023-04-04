@@ -81,7 +81,7 @@ li button{
 }
 
 .banner{
-    background-image: url("/dela00331.github.io/final/images/main-banner.jpg");
+    background-image: url("../images/main-banner.jpg");
     background-position:center;
     background-size:cover;
     height:500px;
@@ -115,7 +115,7 @@ li button{
 }
 
 .vision{
-    background-image: url("../final/images/vision.jpg");
+    background-image: url("../images/vision.jpg");
     background-size:cover;
     background-position:center;
     height:300px;
