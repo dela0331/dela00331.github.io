@@ -1,0 +1,31 @@
+/* 
+font-family: 'Michroma', sans-serif;
+font-family: 'Orbitron', sans-serif;
+*/
+
+h1{
+    font-family:'orbitron', sans-serif;
+    font-weight:700;
+}
+
+h2{
+    font-family:'orbitron', sans-serif;
+    font-weight:700;
+}
+
+p{
+    font-family: 'Michroma', sans-serif;
+}
+
+/*font awesome icon*/
+
+h1 i::before{
+    font-size:4rem;
+    color:rgb(255, 0, 0);
+}
+
+iframe{
+    display:block;
+    width:500px;
+    margin:0 auto;
+}

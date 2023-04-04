@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -21,45 +21,47 @@
 </head>
 
 <body>
-    <container class="container">
-        <!-- with basic css to help visualise*** -->
+    <div class="container">
         <!-- heading / nav start  -->
         <header>
             <nav>
-                <a class="mainlogo" href="index.html"><img src="images/logo.png"></a>
                 <ul>
-                    <li class="home">Home</li>
+                    <li><a class="mainlogo" href="index.html"><img src="images/logo.png" alt="Logo"></a></li>
+                    <li class="home"><a class="home1" href=index.html>Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <form id="form">
+                            <input type="search" id="query" name="q" placeholder="Search">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </li>
                 </ul>
-                <form id="form">
-                    <input type="search" id="query" name="q" placeholder="Search">
-                    <button><i class="fa-solid fa-magnifying-glass" style="color:black"></i></button>
-                </form>
             </nav>
 
             <div class="banner">
-                <div class="bannertext">
+                <div class="bannertext maxwidth">
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur blanditiis amet vel commodi
                         ut qui
                         non facere molestias, incidunt doloremque rerum sint quibusdam sit eius, adipisci cum illo quis
                         vero.
                     </p>
-                    <a>
-                        Connect with us <i class="fa-solid fa-play" style="color:black"></i>
+                    <a class="connectbutton">
+                        Connect with us <i class="fa-solid fa-play"></i>
                     </a>
                 </div>
             </div>
         </header>
         <!-- heading / nav end -->
         <main>
+            <!-- main start -->
             <!-- about start -->
-            <section class="about" id="about">
+            <section class="about width" id="about">
                 <div class="abouttext">
-                    <img src="images/about-us.jpg">
+                    <img src="images/about-us.jpg" alt="Image of modern looking office space">
                     <div>
                         <h2>About Us</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil omnis inventore repudiandae
@@ -77,8 +79,8 @@
             <!-- about end -->
 
             <!-- services start -->
-            <section class="services" id="services">
-                <div class="cardsandheading">
+            <section class="services width" id="services">
+                <div class="cardsandheading maxwidth">
                     <h2>Our Services</h2>
 
                     <div class="digitaltranformation">
@@ -89,7 +91,7 @@
                                 quisquam
                                 exercitationem laboriosam et aut sit minus iusto deserunt in voluptatum, ex, assumenda
                                 consequatur nulla itaque odio quia.</p>
-                            <a>Digital Plans <i class="fa-solid fa-play" style="color:black"></i></a>
+                            <a>Digital Plans <i class="fa-solid fa-play"></i></a>
                         </div>
                     </div>
 
@@ -101,7 +103,7 @@
                                 quisquam
                                 exercitationem laboriosam et aut sit minus iusto deserunt in voluptatum, ex, assumenda
                                 consequatur nulla itaque odio quia.</p>
-                            <a>Marketing Plans <i class="fa-solid fa-play" style="color:black"></i></a>
+                            <a>Marketing Plans <i class="fa-solid fa-play"></i></a>
                         </div>
                     </div>
 
@@ -112,7 +114,7 @@
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos vitae sequi libero
                                 quisquam exercitationem laboriosam et aut sit minus iusto deserunt in voluptatum, ex,
                                 assumenda consequatur nulla itaque odio quia.</p>
-                            <a>Video Plans <i class="fa-solid fa-play" style="color:black"></i></a>
+                            <a>Video Plans <i class="fa-solid fa-play"></i></a>
                         </div>
                     </div>
 
@@ -124,7 +126,7 @@
                                 quisquam
                                 exercitationem laboriosam et aut sit minus iusto deserunt in voluptatum, ex, assumenda
                                 consequatur nulla itaque odio quia.</p>
-                            <a>Web Plans <i class="fa-solid fa-play" style="color:black"></i></a>
+                            <a>Web Plans <i class="fa-solid fa-play"></i></a>
                         </div>
                     </div>
 
@@ -136,7 +138,7 @@
                                 quisquam
                                 exercitationem laboriosam et aut sit minus iusto deserunt in voluptatum, ex, assumenda
                                 consequatur nulla itaque odio quia.</p>
-                            <a>Print Plans <i class="fa-solid fa-play" style="color:black"></i></a>
+                            <a>Print Plans <i class="fa-solid fa-play"></i></a>
                         </div>
                     </div>
                 </div>
@@ -144,20 +146,20 @@
             <!-- services end -->
 
             <!-- vision start -->
-            <section class="vision">
-                <div>
+            <section class="vision width">
+                <div class="maxwidth">
                     <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea voluptas libero perspiciatis
                         sequi magni molestiae sunt incidunt, consectetur, quae minima dolore culpa asperiores?
                         Repudiandae
                         iusto minima quaerat at molestiae.</p>
-                    <a>Learn More <i class="fa-solid fa-play" style="color:black"></i></a>
+                    <a>Learn More <i class="fa-solid fa-play"></i></a>
                 </div>
             </section>
             <!-- vision end -->
 
             <!-- team start -->
-            <section class="team" id="team">
+            <section class="team width" id="team">
                 <h3>Our Team</h3>
                 <div>
                     <img src="images/john.jpg" alt="Picture of CEO and Co-owner, John Doe ">
@@ -191,48 +193,53 @@
             <!-- team end -->
 
             <!-- contact start -->
-            <section class="contact" id="contact">
-                <h2>Contact Us</h2>
-                <form>
-                    <div class="formsheet">
-                        <h3>Send us a message</h3>
-                        <label for="fullname" class="fullname">Full Name</label><br>
-                        <input type="text" id="fullname" name="fullname"><br>
-                        <label for="email" class="email">Email</label><br>
-                        <input type="email" id="email" name="email"><br>
-                        <label for="message" class="message">Message</label><br>
-                        <textarea id="message" name="message"></textarea><br>
-                        <button type="submit">SEND</button>
-                    </div>
+            <section class="contact width" id="contact">
+                <div class="maxwidth">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <div class="formsheet">
+                            <h3>Send us a message</h3>
+                            <label for="fullname" class="fullname">Full Name</label><br>
+                            <input type="text" id="fullname" name="fullname"><br>
+                            <label for="email" class="email">Email</label><br>
+                            <input type="email" id="email" name="email"><br>
+                            <label for="message" class="message">Message</label><br>
+                            <textarea id="message" name="message"></textarea><br>
+                            <button type="submit">SEND</button>
+                        </div>
 
-                    <div class="hours">
-                        <h3>Hours of Operation</h3>
-                        <table>
-                            <tr>
-                                <td>Days</td>
-                                <td>Hours</td>
-                            </tr>
-                            <tr>
-                                <td>Monday - Friday</td>
-                                <td>9 AM - 6 PM</td>
-                            </tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </table>
-                    </div>
+                        <div class="hours">
+                            <h3>Hours of Operation</h3>
+                            <table>
+                                <tr>
+                                    <td>Days</td>
+                                    <td>Hours</td>
+                                </tr>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                                </tr>
+                            </table>
+                        </div>
 
-                    <div class="location">
-                        <h3>Location</h3>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447375322197!2d-75.7549368!3d45.349927799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680582099158!5m2!1sen!2sca"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="location width">
+                            <h3>Location</h3>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447375322197!2d-75.7549368!3d45.349927799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680582099158!5m2!1sen!2sca"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                    </div>
-                </form>
+                        </div>
+                    </form>
+                </div>
             </section>
             <!-- contact end -->
         </main>
+        <!-- main end -->
 
         <!-- footer -->
         <footer>
@@ -240,7 +247,7 @@
             <br>
             All Images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a>
         </footer>
-    </container>
+    </div>
 </body>
 
 </html>
