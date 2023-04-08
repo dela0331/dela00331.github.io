@@ -6,6 +6,7 @@ general styles
     background-color:white;
     font-family: 'Open Sans', sans-serif;
     max-width:1200px;
+    margin:0 auto;
 }
 
 header{
@@ -14,12 +15,13 @@ header{
 }
 
 .width{
-    width:100%
+    width:100%;
+    margin:0 auto;
 }
 
 .maxwidth{
     max-width:1200px;
-    margin: 0 auto;
+    margin:0 auto;
 }
 
 .fa-magnifying-glass{
@@ -48,16 +50,24 @@ ul{
     padding:10px;
 }
 
-li{
-    padding-top:20px;
-}
-
 li a{
     text-decoration:none;
     color:#c78c06;
     padding-bottom:10px;
+    display:flex;
+    flex-direction:column;
+    padding-top:20px;
 }
 
+li img{
+    width:100px;
+}
+
+li a:hover,
+li a:focus{
+    color:#222;
+    background-color: #c78c06;
+}
 
 li form{
     display:flex;
@@ -80,13 +90,50 @@ li button{
     display:flex;
 }
 
+/* below: had problems with anchor overlapping paragraph, so set it to flexbox to fix*/
+
 .banner{
     background-image: url("../images/main-banner.jpg");
     background-position:center;
     background-size:cover;
     height:500px;
     width:100%;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
+
+.bannertext{
+    background-color:rgba(0, 0, 0, 0.5);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+    justify-content:center;
+    padding:10px;
+}
+
+h1{
+    font-size:3.5em;
+    font-weight:700;
+    line-height:1.5em;
+    margin-bottom:0.3em;
+}
+
+.bannertext p{
+    line-height:1.5em;
+    margin-bottom:1em;
+    font-size:0.8em;
+}
+
+.connectbutton{
+    background-color:#c78c06;
+    padding:28px;
+    width:fit-content;
+    color:black;
+}
+
 
 /* fix - css background position property .hero-image*/
 
@@ -95,6 +142,7 @@ li button{
     box-sizing:border-box;
     justify-content:center;
     margin:0 auto;
+    padding-bottom:20px;
 }
 
 .abouttext{
@@ -102,6 +150,17 @@ li button{
     max-width:1200px;
     justify-content:center;
     margin:0 auto;
+}
+
+.abouttext h2{
+    padding:10px;
+    font-weight:700;
+    font-size:2.5em;
+}
+
+.abouttext p{
+    padding:10px;
+    font-size:0.8em;
 }
 
 .about img{
