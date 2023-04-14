@@ -5,7 +5,6 @@ general styles
 .container{
     background-color:white;
     font-family: 'Open Sans', sans-serif;
-    max-width:1200px;
     margin:0 auto;
 }
 
@@ -132,8 +131,13 @@ h1{
     padding:28px;
     width:fit-content;
     color:black;
+    cursor:pointer;
+    text-decoration:none;
 }
 
+.connectbutton:active{
+    background-color:#8d670d;
+}
 
 /* fix - css background position property .hero-image*/
 
@@ -142,7 +146,7 @@ h1{
     box-sizing:border-box;
     justify-content:center;
     margin:0 auto;
-    padding-bottom:20px;
+    margin-bottom:20px;
 }
 
 .abouttext{
@@ -161,6 +165,7 @@ h1{
 .abouttext p{
     padding:10px;
     font-size:0.8em;
+    line-height:1.5;
 }
 
 .about img{
@@ -169,29 +174,185 @@ h1{
     box-sizing:border-box;
 }
 
-.cardsandtext{
-    max-width:1200px;
+.cardsandheading h2{
+    font-size:2.5em;
+    font-weight:700;
+    padding:20px 10px;
+}
 
+.card{
+    background-color:#ffe6ac;
+    margin-bottom:10px;
+}
+
+.card img{
+    width:100%;
+}
+
+.card div{
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+}
+
+.card h3{
+    font-size:1.5em;
+    font-weight:700;
+    padding:20px 0;
+}
+
+.card p{
+    font-size:0.8em;
+    padding-bottom:10px;
+    line-height:1.5;
+}
+
+.card a{
+    padding:28px;
+    background-color:#222;
+    color:white;
+    width:fit-content;
+    cursor:pointer;
+}
+
+.card a:active{
+    background-color:black;
+}
+
+.card .fa-play{
+    color:white;
 }
 
 .vision{
     background-image: url("../images/vision.jpg");
     background-size:cover;
     background-position:center;
-    height:300px;
+    height:fit-content;
     width:100%;
 }
 
+.vision div{
+    display:flex;
+    flex-direction:column;
+    color:white;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+.vision h3{
+    font-size:1.5em;
+    font-weight:700;
+    padding:20px 0;
+}
+
+.vision p{
+    font-size:0.8em;
+    padding-bottom:10px;
+    line-height:1.5;
+}
+
+.vision a{
+    padding:28px;
+    background-color:#222222b1;
+    border:1px solid #c78c06;
+    color:white;
+    width:fit-content;
+    cursor:pointer;
+}
+
+.vision a:active{
+    background-color:#222;
+}
+
+.vision .fa-play{
+    color:white;
+}
+
 .team{
-    max-width:1200px;
-    margin:0 auto;
+    margin-bottom:20px;
+}
+
+.team h3{
+    font-size:2.5em;
+    font-weight:700;
+    padding:20px 10px;
 }
 
 .team div{
     background-color:#ffe6ac;
 }
+.team h4,
+.team h5,
+.team p{
+    line-height:1.5;
+    padding:0 10px;
+}
+
+.team h4{
+    font-size:1.6em;
+    font-weight:700;
+    padding-top:10px;
+}
+
+.team h5{
+    font-weight:700;
+    padding-bottom:5px;
+}
+
+.team p{
+    font-size:0.8em;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+hr{
+    border: 1px solid #c78c06;
+    margin:0 10px;
+}
 
 .team img{
+    width:100%;
+}
+
+.contact{
+    padding:10px;
+}
+
+.contact h2{
+    font-size:2.5em;
+    font-weight:700;
+    padding:26px 0;
+}
+
+.contact h3{
+    font-size:2em;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.contact label{
+    font-size:0.8em;
+}
+
+.contact input{
+    margin:6px 0;
+    width:96%;
+}
+
+.contact textarea{
+    margin-top:6px;
+    width:96%;
+}
+
+.contact button{
+    background-color:#222;
+    color:#c78c06;
+    padding:4px;
+    font-size:1em;
+    margin:20px 0;
+}
+
+.contact table{
     width:100%;
 }
 
