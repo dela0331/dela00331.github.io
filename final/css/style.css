@@ -31,6 +31,30 @@ header{
     color:black;
 }
 
+h1{
+    font-size:3.5em;
+}
+
+h2{
+    font-size:3em;
+}
+
+h3{
+    font-size:2.5em;
+}
+
+h4{
+    font-size:2em;
+}
+
+h5{
+    font-size:1.5em;
+}
+
+p{
+    font-size:0.8em;
+}
+
 /****
 mobile styles
 ****/
@@ -114,7 +138,6 @@ li button{
 }
 
 h1{
-    font-size:3.5em;
     font-weight:700;
     line-height:1.5em;
     margin-bottom:0.3em;
@@ -159,12 +182,10 @@ h1{
 .abouttext h2{
     padding:10px;
     font-weight:700;
-    font-size:2.5em;
 }
 
 .abouttext p{
     padding:10px;
-    font-size:0.8em;
     line-height:1.5;
 }
 
@@ -172,10 +193,10 @@ h1{
     width:100%;
     padding:10px;
     box-sizing:border-box;
+    object-fit:cover;
 }
 
 .cardsandheading h2{
-    font-size:2.5em;
     font-weight:700;
     padding:20px 10px;
 }
@@ -196,13 +217,11 @@ h1{
 }
 
 .card h3{
-    font-size:1.5em;
     font-weight:700;
     padding:20px 0;
 }
 
 .card p{
-    font-size:0.8em;
     padding-bottom:10px;
     line-height:1.5;
 }
@@ -240,13 +259,11 @@ h1{
 }
 
 .vision h3{
-    font-size:1.5em;
     font-weight:700;
     padding:20px 0;
 }
 
 .vision p{
-    font-size:0.8em;
     padding-bottom:10px;
     line-height:1.5;
 }
@@ -273,7 +290,6 @@ h1{
 }
 
 .team h3{
-    font-size:2.5em;
     font-weight:700;
     padding:20px 10px;
 }
@@ -289,7 +305,6 @@ h1{
 }
 
 .team h4{
-    font-size:1.6em;
     font-weight:700;
     padding-top:10px;
 }
@@ -300,7 +315,6 @@ h1{
 }
 
 .team p{
-    font-size:0.8em;
     padding-top:10px;
     padding-bottom:20px;
 }
@@ -316,16 +330,15 @@ hr{
 
 .contact{
     padding:10px;
+    box-sizing:border-box;
 }
 
 .contact h2{
-    font-size:2.5em;
     font-weight:700;
     padding:26px 0;
 }
 
 .contact h3{
-    font-size:2em;
     font-weight:700;
     margin-bottom:20px;
 }
@@ -356,13 +369,43 @@ hr{
     width:100%;
 }
 
-iframe{
-    width:50%;
-    height:50%;
+.hours{
+    width:100
 }
+
+.contact table{
+    border:1px solid black;
+    margin-bottom:20px;
+}
+
+.contact tr{
+    border:1px solid black;
+}
+
+.contact td{
+    padding:10px;
+    border:1px solid black;
+}
+
+.contact tr:nth-child(1){
+    background-color:#ffe6ac;
+    text-align:center;
+}
+
 
 footer{
     background-color:#222;
+    color:#c78c06;
+    text-decoration:none;
+
+    padding:20px 10px;
+    padding-top:30px;
+    line-height:2.5;
+}
+
+footer a{
+    text-decoration:none;
+    color:#c78c06;
 }
 
 /****
@@ -371,20 +414,119 @@ width queries
 
 @media screen and (min-width: 760px){
 
+    /****general****/
+
+    h1{
+        font-size:5.3em;
+    }
+
+    h2{
+        font-size:4em;
+    }
+
+    h3{
+        font-size:2em;
+    }
+
+    h4{
+        font-size:3em;
+    }
+
+    h5{
+        font-size:2.75em;
+    }
+
+    p{
+        font-size:1em;
+    }
+    
+
+    /****specific****/
+
+
     header ul{
         display:flex;
+        justify-content:space-around;
+        align-items:center;
+        box-sizing:border-box;
+        padding:0 20px;
+    }
+
+    header a{
+        margin:0;
+        font-size:0.8em;
+        padding:14px;
+    }
+
+    .mainlogo{
+        background-color:#222;
+    }
+
+    .home{
+        padding:0;
     }
 
     .abouttext{
         display:flex;
     }
 
+    .about{
+        background-color:#ffe6ac;
+    }
+
     .abouttext img{
         width:50%;
     }
 
+    .card{
+        position:relative;
+        margin:5px;
+        padding-bottom:66px;
+    }
+
+    .card a{
+        box-sizing:border-box;
+        position:absolute;
+        bottom:10px;
+        text-align:center;
+        left:3%;
+        width:94%;
+    }
+
     .cardsandheading{
+        box-sizing:border-box;
         display:grid;
+        grid-template-columns:repeat(6,1fr);
+        grid-template-rows:140px 1fr 1fr;
+        grid-template-areas:
+        "services services services services services services"
+        "digi digi digi marketing marketing marketing"
+        'video video webdev webdev print print'
+        ;
+    }
+
+    .services h2{
+        grid-area:services;
+    }
+
+    .digitaltransformation{
+        grid-area:digi;
+    }
+
+    .marketing{
+        grid-area:marketing;
+    }
+
+    .videoproduction{
+        grid-area:video;
+    }
+
+    .webdevelopment{
+        grid-area:webdev;
+    }
+
+    .print{
+        grid-area:print;
     }
 
     .team{
@@ -411,5 +553,60 @@ width queries
 
     .team div:nth-child(5){
         flex-basis:50%;
+    }
+
+    .contact{
+        display:flex;
+        flex-direction:column;
+        justify-content:left;
+        align-items:left;
+        flex-wrap:wrap;
+    }
+
+    .contact h2{
+        flex-basis:100%;
+    }
+
+    .formsheet{
+        flex-basis:50%;
+    }
+
+    .location{
+        flex-basis:50%;
+    }
+
+    .hours{
+        flex-basis:100%;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    h1{
+        font-size:6em;
+    }
+
+    h2{
+        font-size:4em;
+    }
+
+    h3{
+        font-size:2.5em;
+    }
+
+    h4{
+        font-size:3em;
+    }
+
+    h5{
+        font-size:2.75em;
+    }
+
+    p{
+        font-size:1em;
+    }
+
+    header a{
+        padding:20px 40px;
     }
 }
