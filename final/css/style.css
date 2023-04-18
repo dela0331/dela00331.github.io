@@ -59,6 +59,7 @@ p{
 mobile styles
 ****/
 
+/*heading*/
 .home{
     background-color:#c78c06;
     color:#222;
@@ -113,8 +114,6 @@ li button{
     display:flex;
 }
 
-/* below: had problems with anchor overlapping paragraph, so set it to flexbox to fix*/
-
 .banner{
     background-image: url("../images/main-banner.jpg");
     background-position:center;
@@ -162,8 +161,7 @@ h1{
     background-color:#8d670d;
 }
 
-/* fix - css background position property .hero-image*/
-
+/*about*/
 .about{
     width:100%;
     box-sizing:border-box;
@@ -196,6 +194,7 @@ h1{
     object-fit:cover;
 }
 
+/*services*/
 .cardsandheading h2{
     font-weight:700;
     padding:20px 10px;
@@ -242,6 +241,7 @@ h1{
     color:white;
 }
 
+/*vision*/
 .vision{
     background-image: url("../images/vision.jpg");
     background-size:cover;
@@ -285,6 +285,7 @@ h1{
     color:white;
 }
 
+/*team*/
 .team{
     margin-bottom:20px;
 }
@@ -328,6 +329,7 @@ hr{
     width:100%;
 }
 
+/*contact*/
 .contact{
     padding:10px;
     box-sizing:border-box;
@@ -366,7 +368,6 @@ hr{
     margin:20px 0;
 }
 
-
 .contact table{
     width:100%;
 }
@@ -394,7 +395,7 @@ hr{
     text-align:center;
 }
 
-
+/*footer*/
 footer{
     background-color:#222;
     color:#c78c06;
@@ -413,11 +414,9 @@ footer a{
 /****
 width queries
 ****/
-
 @media screen and (min-width: 760px){
 
     /****general****/
-
     h1{
         font-size:5.3em;
     }
@@ -444,8 +443,6 @@ width queries
     
 
     /****specific****/
-
-
     header ul{
         display:flex;
         justify-content:space-around;
@@ -476,6 +473,7 @@ width queries
         padding:0;
     }
 
+    /*about*/
     .abouttext{
         display:flex;
     }
@@ -488,6 +486,7 @@ width queries
         width:50%;
     }
 
+    /*services*/
     .card{
         position:relative;
         margin:5px;
@@ -539,6 +538,7 @@ width queries
         grid-area:print;
     }
 
+    /*team*/
     .team{
         display:flex;
         flex-wrap:wrap;
@@ -565,6 +565,7 @@ width queries
         flex-basis:50%;
     }
 
+    /*contact*/
    form{
         display:grid;
         grid-template-columns:1fr 1fr;
@@ -594,6 +595,7 @@ width queries
 
 }
 
+/****fixes some font sizing to look nicer on bigger screens****/
 @media screen and (min-width: 1200px){
     h1{
         font-size:6em;
