@@ -289,7 +289,7 @@ h1{
     margin-bottom:20px;
 }
 
-.team h3{
+.team h2{
     font-weight:700;
     padding:20px 10px;
 }
@@ -355,6 +355,7 @@ hr{
 .contact textarea{
     margin-top:6px;
     width:96%;
+    height:100px;
 }
 
 .contact button{
@@ -453,6 +454,14 @@ width queries
         padding:0 20px;
     }
 
+    .bannertext{
+        box-sizing:border-box;
+    }
+
+    .banner{
+        box-sizing:border-box;
+    }
+
     header a{
         margin:0;
         font-size:0.8em;
@@ -506,7 +515,7 @@ width queries
         ;
     }
 
-    .services h2{
+    .service{
         grid-area:services;
     }
 
@@ -535,7 +544,7 @@ width queries
         flex-wrap:wrap;
     }
 
-    .team h3{
+    .team h2{
         flex-basis:100%;
     }
 
@@ -556,28 +565,31 @@ width queries
         flex-basis:50%;
     }
 
-    .contact{
-        display:flex;
-        flex-direction:column;
-        justify-content:left;
-        align-items:left;
-        flex-wrap:wrap;
-    }
-
-    .contact h2{
-        flex-basis:100%;
+   form{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr 240px;;
+        grid-template-areas:
+        "message location"
+        "hours hours"
+        ;
     }
 
     .formsheet{
-        flex-basis:50%;
+        grid-area:message;
     }
 
     .location{
-        flex-basis:50%;
+        grid-area:location;
     }
 
     .hours{
-        flex-basis:100%;
+        grid-area:hours;
+        padding-top:40px;
+    }
+
+    iframe{
+        width:100%;
     }
 
 }
@@ -609,5 +621,6 @@ width queries
 
     header a{
         padding:20px 40px;
+        font-size:1em;
     }
 }
